@@ -2,24 +2,23 @@ package ejercicio7;
 
 public class Calculadora {
 	
-	public int sumar(int a, int b) {
-        return a + b;
+	public int sumar(int sumando1, int sumando2) {
+        return sumando1 + sumando2;
     }
 
-    public int restar(int a, int b) {
-        return a - b;
+    public int restar(int minuendo, int sustraendo) {
+        return minuendo - sustraendo;
     }
 
-    public int multiplicar(int a, int b) {
-        return a * b;
+    public int multiplicar(int factor1, int factor2) {
+        return factor1 * factor2;
     }
 
-    public int dividir(int a, int b) {
-        if (b == 0) {
-            System.out.println("Error: No se puede dividir por cero.");
-            return 0;
+    public float dividir(float dividendo, int divisor) throws Exception {
+        if (divisor == 0) {
+            throw new Exception("Valor incorrecto");
         }
-        return a / b;
+        return dividendo / divisor;
     }
 
     public double calcularAreaCirculo(double radio) {

@@ -2,7 +2,7 @@ package ejercicio7;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
 		Calculadora calc = new Calculadora();
 
@@ -11,10 +11,8 @@ public class Main {
         System.out.println("Multiplicación: " + calc.multiplicar(10, 5));
         System.out.println("División: " + calc.dividir(10, 5));
 
-        double radio = 5.0;
-        double altura = 10.0;
-        double area = Math.PI * radio * radio;
-        double volumen = area * altura;
+        double area = Math.PI * 5.0 * 5.0;
+        double volumen = area * 10.0;
         System.out.println("Área del círculo: " + area);
         System.out.println("Volumen del cilindro: " + volumen);
     }
